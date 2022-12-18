@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>tusher</title>
 	<link rel="icon" type="image" href="" />
 	<link rel="stylesheet" href="style.css" />
 </head>
@@ -12,7 +12,7 @@
 		<nav>
 			<div class="logo">
 				<a href="#">
-					<img src="img/logo.png" class="logo" id="logo" alt="logo" />
+					<img src="logo.png" class="logo" id="logo" alt="logo" />
 				</a>
 			</div>
 			<ul class="menu"> 
@@ -23,7 +23,7 @@
 			</ul>
 			<div class="toggle-btn"  id="btmdark"> 
 				<span id="btntext">Dark</span>
-				<img src="img/moon.png" id="btnimg" alt="moon" />
+				<img src="moon.png" id="btnimg" alt="moon" />
 			</div>
 		</nav>
 		<div class="content">
@@ -33,10 +33,10 @@
 			<a href="#">Hire Me</a>
 		</div>
 		<div class="image-block"> 
-			<img src="img/user.png" alt="" />
+			<img src="user.png" alt="" />
 			<div class="pattern">
-				<img src="img/background.png" alt="" />
-				<img src="img/background.png" alt="" />
+				<img src="background.png" alt="" />
+				<img src="background.png" alt="" />
 			</div>
 		</div>
 	</header>
@@ -59,12 +59,12 @@
 	btm.onclick = function(){
 		document.body.classList.toggle("dark-theme");
 		if(document.body.classList.contains("dark-theme")){
-		btmimg.src="img/sun.png";
-		btmlogo.src="img/logo-white.png";
+		btmimg.src="sun.png";
+		btmlogo.src="logo-white.png";
 		btmtext.innerHTML="Light";
 		}else{
-			btmlogo.src="img/logo-white.png";
-			btmimg.src="img/moon.png";
+			btmlogo.src="logo-white.png";
+			btmimg.src="moon.png";
 		btmtext.innerHTML="Dark";
 		}
 	}

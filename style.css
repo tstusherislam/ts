@@ -1,0 +1,140 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	box-sizing:border-box;
+}
+:root{
+	--background-color:#fff;
+	--text-color:#555;
+	--title-color:#000;
+}
+
+.dark-theme{
+	--background-color:#000;
+	--text-color:#999;
+	--title-color:#fff;
+}
+
+
+body{
+	background:var(--background-color);
+	color:var(--text-color);
+	transition:background 0.8s, color 0.8s;
+}
+header{
+	width:100%;
+	min-height:100vh;
+	padding:0 8%;
+	position:relative;
+	overflow:hidden;
+}
+nav{
+	display:flex;
+	align-items:center;
+	padding:10px 0px;
+}
+img.logo{
+	width:80px;
+}
+ul.menu {
+	width:100%;
+	text-align:right;
+	list-style:none;
+	margin-right:50px;
+}
+ul.menu li{
+	display:inline-block;
+	margin:5px 15px;
+}
+ul.menu li a{
+	text-decoration:none;
+	color:var(--text-color);
+	font-weight:500;
+}
+.toggle-btn{
+	background:#4864ff;
+	color:#fff;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:160px;
+	height:40px;
+	border-radius:20px;
+	cursor:pointer;
+}
+
+.toggle-btn img{
+	width:25px;
+}
+.content{
+	margin-top:10%;
+	max-width:600px;
+}
+.content h1{
+	font-size:80px;
+	font-family:sans-serif;
+	color:var(--title-color);
+	font-weight:600;
+}
+
+.content h1 span{
+	font-family:serif;
+	font-weight:400;
+	font-style:italic;
+}
+
+.content a{
+	background:#4864ff;
+	color:#fff;
+	text-decoration:none;
+	padding:15px 70px;
+	display:inline-block;
+	cursor:pointer;
+	border-radius:30px;
+	margin-top:30px;
+	
+}
+
+.image-block img{
+	display:block;
+	width:400px;
+}
+.image-block{
+position:absolute;
+right:15%;
+bottom:0%;
+}
+.pattern{
+    position: absolute;
+    top: 68px;
+	left: 58%;
+    display: flex;
+    transform: rotate(40deg);
+    z-index: -1;
+}
+.pattern img{
+	width:300px;
+	position:absolute;
+	top:0;
+	left:0;
+	animation:move 1.8s linear infinite alternate-reverse;
+}
+.pattern img:nth-child(1){
+	transform:rotate(-45deg) translate(-70px, -50px);
+	animation-delay:0.5s;
+}
+.pattern img:nth-child(2){
+	transform:rotate(66deg) translate(0px, -40px) scale(0.8);
+	animation-delay:1.5s;
+}
+
+	@keyframes move{
+		
+	100%{
+		margin-left:40px;
+		margin-top:20px;
+		opacity:0.3;
+	}
+}
+

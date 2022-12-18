@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="icon" type="image" href="" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	 <!-- header start from hare -->
+	<header> 
+		<nav>
+			<div class="logo">
+				<a href="#">
+					<img src="img/logo.png" class="logo" id="logo" alt="logo" />
+				</a>
+			</div>
+			<ul class="menu"> 
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Protfolio</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<div class="toggle-btn"  id="btmdark"> 
+				<span id="btntext">Dark</span>
+				<img src="img/moon.png" id="btnimg" alt="moon" />
+			</div>
+		</nav>
+		<div class="content">
+			<h1>Hello !	</h1>
+			<h1><span>I'm</span> Tusher</h1>
+			<p>I'm professional full stack web developer</p>
+			<a href="#">Hire Me</a>
+		</div>
+		<div class="image-block"> 
+			<img src="img/user.png" alt="" />
+			<div class="pattern">
+				<img src="img/background.png" alt="" />
+				<img src="img/background.png" alt="" />
+			</div>
+		</div>
+	</header>
+		<!-- section start from hare -->
+	<section> 
+	
+	
+	</section>
+	<!-- footer start from hare -->
+	<footer> 
+	
+	
+	</footer>
+	
+	<script type="text/javascript"> 
+	let btm = document.getElementById("btmdark");
+	let btmtext = document.getElementById("btntext");
+	let btmimg = document.getElementById("btnimg");
+	let btmlogo = document.getElementById("logo");
+	btm.onclick = function(){
+		document.body.classList.toggle("dark-theme");
+		if(document.body.classList.contains("dark-theme")){
+		btmimg.src="img/sun.png";
+		btmlogo.src="img/logo-white.png";
+		btmtext.innerHTML="Light";
+		}else{
+			btmlogo.src="img/logo-white.png";
+			btmimg.src="img/moon.png";
+		btmtext.innerHTML="Dark";
+		}
+	}
+	</script>
+</body>
+</html>
